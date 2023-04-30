@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6770f6f3b0934976ad7cd6f8678b932a" Name="Diagram1">
+        <EntityTypeShape EntityType="HouseOfCultureModel.Event" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseOfCultureModel.Group" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseOfCultureModel.Leadership" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseOfCultureModel.Request" Width="1.5" PointX="8.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseOfCultureModel.Role" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseOfCultureModel.Schedule" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseOfCultureModel.Student" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseOfCultureModel.sysdiagram" Width="1.5" PointX="7.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseOfCultureModel.TypeRequest" Width="1.5" PointX="6" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseOfCultureModel.User" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="HouseOfCultureModel.FK_Schedule_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseOfCultureModel.FK_Leadership_User" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseOfCultureModel.FK_Request_TypeRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseOfCultureModel.FK_Request_User" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseOfCultureModel.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseOfCultureModel.FK_Student_User" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseOfCultureModel.EventGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseOfCultureModel.GroupLidership" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseOfCultureModel.GroupStudent" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseOfCultureModel.FK_Request_Group" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

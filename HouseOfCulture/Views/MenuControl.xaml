@@ -1,0 +1,72 @@
+﻿<UserControl
+    x:Class="HouseOfCulture.Views.MenuPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:HouseOfCulture.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="300"
+    HorizontalAlignment="Center"
+    VerticalAlignment="Center"
+    Loaded="MenuPage_OnLoaded"
+    mc:Ignorable="d">
+    <StackPanel>
+        <!--  TODO Для учеников и руководителей  -->
+        <Button
+            Name="BtnProfile"
+            Margin="0,5"
+            Click="BtnProfile_OnClick"
+            Content="Профиль"
+            Style="{StaticResource BtnFilled}"
+            Visibility="Collapsed" />
+
+        <Button
+            Name="BtnStudents"
+            Margin="0,5"
+            Click="BtnStudents_OnClick"
+            Content="Ученики"
+            Visibility="Collapsed" />
+        <Button
+            Name="BtnLeaderships"
+            Margin="0,5"
+            Click="BtnLeaderships_OnClick"
+            Content="Руководители"
+            Visibility="Collapsed" />
+        <Button
+            Name="BtnGroups"
+            Margin="0,5"
+            Click="BtnGroups_OnClick"
+            Content="Группы"
+            Visibility="Collapsed" />
+        <Button
+            Name="BtnRequests"
+            Margin="0,5"
+            Click="BtnRequests_OnClick"
+            Content="Заявки"
+            Visibility="Collapsed" />
+        <Button
+            Name="BtnTypeRequest"
+            Margin="0,5"
+            Click="BtnTypeRequest_OnClick"
+            Content="Тип заявки"
+            Visibility="Collapsed" />
+        <Button
+            Name="BtnEvents"
+            Margin="0,5"
+            Click="BtnEvents_OnClick"
+            Content="Мероприятия"
+            Visibility="Collapsed" />
+        <Button
+            Name="BtnSchedule"
+            Margin="0,5"
+            Click="BtnSchedule_OnClick"
+            Content="Расписание"
+            Visibility="Collapsed" />
+        <Button
+            Name="BtnUsers"
+            Margin="0,5"
+            Click="BtnUsers_OnClick"
+            Content="Пользователи"
+            Visibility="Collapsed" />
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,13 @@
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\bin\Debug\HouseOfCulture.Models.dll.config
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\bin\Debug\HouseOfCulture.Models.dll
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\bin\Debug\HouseOfCulture.Models.pdb
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\bin\Debug\EntityFramework.dll
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\bin\Debug\EntityFramework.xml
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\obj\Debug\HouseOfCulture.Models.csproj.AssemblyReference.cache
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\obj\Debug\HouseOfCulture.Models.csproj.CoreCompileInputs.cache
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\obj\Debug\HouseOfCulture.Models.csproj.CopyComplete
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\obj\Debug\HouseOfCulture.Models.dll
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture.Models\obj\Debug\HouseOfCulture.Models.pdb

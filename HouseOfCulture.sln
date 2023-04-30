@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseOfCulture", "HouseOfCulture\HouseOfCulture.csproj", "{31E2F78E-F78C-4126-9271-A0CF8C2CBCE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseOfCulture.Models", "HouseOfCulture.Models\HouseOfCulture.Models.csproj", "{90752933-09B2-4D95-AC5B-DD8B2AA58455}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31E2F78E-F78C-4126-9271-A0CF8C2CBCE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E2F78E-F78C-4126-9271-A0CF8C2CBCE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E2F78E-F78C-4126-9271-A0CF8C2CBCE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E2F78E-F78C-4126-9271-A0CF8C2CBCE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90752933-09B2-4D95-AC5B-DD8B2AA58455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90752933-09B2-4D95-AC5B-DD8B2AA58455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90752933-09B2-4D95-AC5B-DD8B2AA58455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90752933-09B2-4D95-AC5B-DD8B2AA58455}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
