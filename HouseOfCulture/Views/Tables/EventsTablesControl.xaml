@@ -5,11 +5,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:HouseOfCulture.Views.Tables"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:HouseOfCulture.ViewModels"
     xmlns:wpf="clr-namespace:Arion.Style.AttachedProperties;assembly=Arion.Style"
     d:DesignHeight="1080"
     d:DesignWidth="1920"
     Loaded="EventsTablesControl_OnLoaded"
     mc:Ignorable="d">
+    <UserControl.DataContext>
+        <vm:EventsTableViewModel />
+    </UserControl.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
@@ -31,6 +35,7 @@
             Margin="10,5"
             AutoGenerateColumns="False"
             IsReadOnly="True"
+            ItemsSource="{Binding Events}"
             RowHeight="40">
             <DataGrid.Columns>
                 <DataGridTextColumn

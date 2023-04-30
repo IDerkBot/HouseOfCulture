@@ -23,7 +23,7 @@ namespace HouseOfCulture.Views.Tables
         {
             if (Data.User.Role.Name == Data.Student) ColumnEdit.Visibility = Visibility.Collapsed;
             else if (Data.User.Role.Name == Data.Leadership) ColumnEdit.Visibility = Visibility.Collapsed;
-            DgData.ItemsSource = HouseOfCultureEntities.GetContext().Events.ToList();
+            // DgData.ItemsSource = HouseOfCultureEntities.GetContext().Events.ToList();
         }
         
         private void BtnEdit_OnClick(object sender, RoutedEventArgs e)

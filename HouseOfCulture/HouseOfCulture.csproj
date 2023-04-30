@@ -64,6 +64,13 @@
         <Compile Include="Models\Data.cs" />
         <Compile Include="Models\ImageManager.cs" />
         <Compile Include="Models\Navigation.cs" />
+        <Compile Include="ViewModels\Base\BaseViewModel.cs" />
+        <Compile Include="ViewModels\EventsTableViewModel.cs" />
+        <Compile Include="ViewModels\GroupsTableViewModel.cs" />
+        <Compile Include="ViewModels\LeadershipsTableViewModel.cs" />
+        <Compile Include="ViewModels\RequestsTableViewModel.cs" />
+        <Compile Include="ViewModels\SchedulesTableViewModel.cs" />
+        <Compile Include="ViewModels\StudentsTableViewModel.cs" />
         <Compile Include="Views\AuthorizationControl.xaml.cs">
           <DependentUpon>AuthorizationControl.xaml</DependentUpon>
         </Compile>
