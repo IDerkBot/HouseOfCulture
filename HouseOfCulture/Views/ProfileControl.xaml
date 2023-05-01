@@ -12,7 +12,10 @@
     VerticalAlignment="Center"
     mc:Ignorable="d">
     <StackPanel>
-        <Border Margin="0,5" Drop="File_OnDrop">
+        <Border
+            Margin="0,5"
+            Drop="File_OnDrop"
+            MouseDown="UploadFile_OnClick">
             <Grid>
                 <Rectangle
                     Width="290"
@@ -39,10 +42,7 @@
                     Foreground="{StaticResource Mg4}"
                     IsHitTestVisible="False" />
 
-                <Image
-                    AllowDrop="True"
-                    Drop="File_OnDrop"
-                    Stretch="UniformToFill">
+                <Image Stretch="UniformToFill">
                     <Image.Source>
                         <Binding Path="Photo" />
                     </Image.Source>

@@ -1,10 +1,12 @@
 ﻿using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using Arion.Style.Controls;
 using Arion.Style.Controls.Enums;
 using HouseOfCulture.Models;
 using HouseOfCulture.Models.Entities;
+using Microsoft.Win32;
 
 namespace HouseOfCulture.Views
 {
@@ -89,6 +91,33 @@ namespace HouseOfCulture.Views
             }
 
             HouseOfCultureEntities.GetContext().SaveChanges();
+        }
+        
+        private void UploadFile_OnClick(object sender, MouseButtonEventArgs e)
+        {
+            var ofd = new OpenFileDialog
+            {
+                Filter = "JPG(*.jpg)|*jpg"
+            };
+
+            if (ofd.ShowDialog() == false) return;
+            
+            // получаем выбранный файл
+            var filename = ofd.FileName;
+            var source = ImageManager.CroppedToBitmapImage(filename);
+            var bytes = ImageManager.CroppedToBytes(source);
+            if (_currentStudent != null)
+            {
+                _currentStudent.Photo = bytes;
+                DataContext = null;
+                DataContext = _currentStudent;
+            }
+            else if (_currentLeadership != null)
+            {
+                _currentLeadership.Photo = bytes;
+                DataContext = null;
+                DataContext = _currentLeadership;
+            }
         }
     }
 }

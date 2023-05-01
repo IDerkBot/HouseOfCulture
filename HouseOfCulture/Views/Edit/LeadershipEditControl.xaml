@@ -35,7 +35,10 @@
             wpf:Hint.Placeholder="Пользователь"
             DisplayMemberPath="Login"
             SelectedItem="{Binding User}" />
-        <Border Margin="0,5" Drop="File_OnDrop">
+        <Border
+            Margin="0,5"
+            Drop="File_OnDrop"
+            MouseDown="UploadFile_OnClick">
             <Grid>
                 <Rectangle
                     Width="290"
@@ -43,6 +46,7 @@
                     Margin="5"
                     AllowDrop="True"
                     Fill="{StaticResource Lg5}"
+                    IsHitTestVisible="False"
                     RadiusX="6"
                     RadiusY="6"
                     Stroke="{StaticResource Lg3}"
@@ -62,10 +66,7 @@
                     Foreground="{StaticResource Mg4}"
                     IsHitTestVisible="False" />
 
-                <Image
-                    AllowDrop="True"
-                    Drop="File_OnDrop"
-                    Stretch="UniformToFill">
+                <Image Stretch="UniformToFill">
                     <Image.Source>
                         <Binding Path="Photo" />
                     </Image.Source>
