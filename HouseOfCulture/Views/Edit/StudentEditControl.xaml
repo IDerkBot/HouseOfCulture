@@ -37,6 +37,7 @@
             SelectedItem="{Binding User}" />
         <Border
             Margin="0,5"
+            AllowDrop="True"
             Drop="File_OnDrop"
             MouseDown="UploadFile_OnClick">
             <Grid>

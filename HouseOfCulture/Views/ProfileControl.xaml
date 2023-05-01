@@ -14,6 +14,7 @@
     <StackPanel>
         <Border
             Margin="0,5"
+            AllowDrop="True"
             Drop="File_OnDrop"
             MouseDown="UploadFile_OnClick">
             <Grid>
@@ -23,6 +24,7 @@
                     Margin="5"
                     AllowDrop="True"
                     Fill="{StaticResource Lg5}"
+                    IsHitTestVisible="False"
                     RadiusX="6"
                     RadiusY="6"
                     Stroke="{StaticResource Lg3}"
