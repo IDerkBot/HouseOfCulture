@@ -181,5 +181,9 @@
         <Name>HouseOfCulture.Models</Name>
       </ProjectReference>
     </ItemGroup>
+    <ItemGroup>
+      <Content Include="SQL\2012\HouseOfCulture.sql" />
+      <Content Include="SQL\v160\HouseOfCulture.sql" />
+    </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
