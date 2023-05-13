@@ -63,7 +63,8 @@
                         <DataTemplate>
                             <Button
                                 wpf:Button.Icon="Edit"
-                                Click="BtnEdit_OnClick"
+                                Command="{Binding DataContext.EditEventCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                CommandParameter="{Binding}"
                                 Style="{StaticResource BtnText}" />
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
@@ -80,17 +81,20 @@
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
+            <TextBlock Text="{Binding SelectedEvent.Name}" />
+
             <Button
                 Name="BtnDelete"
                 Grid.Column="4"
                 Margin="5,0"
-                Click="BtnDelete_OnClick"
+                Command="{Binding DeleteEventCommand}"
+                CommandParameter="{Binding ElementName=DgData, Path=SelectedItem}"
                 Content="Удалить" />
             <Button
                 Name="BtnAdd"
                 Grid.Column="5"
                 Margin="5,0"
-                Click="BtnAdd_OnClick"
+                Command="{Binding AddEventCommand}"
                 Content="Добавить"
                 Style="{StaticResource BtnFilled}" />
         </Grid>
