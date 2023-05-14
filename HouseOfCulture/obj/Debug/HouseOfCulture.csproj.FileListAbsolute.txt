@@ -67,3 +67,5 @@ C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture\obj\Debug\Views\Edit\
 C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture\obj\Debug\Views\ProfileControl.g.cs
 C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture\obj\Debug\Views\ProfileControl.baml
 C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture\obj\Debug\HouseOfCulture_Content.g.cs
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture\obj\Debug\Views\EventInfo.g.cs
+C:\Users\ivand\RiderProjects\HouseOfCulture\HouseOfCulture\obj\Debug\Views\EventInfo.baml

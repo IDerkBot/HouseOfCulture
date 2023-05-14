@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
 using Arion.Style.Controls;
 using Arion.Style.Controls.Enums;
 using HouseOfCulture.Models;

@@ -1,0 +1,39 @@
+﻿<Window
+    x:Class="HouseOfCulture.Views.EventInfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:HouseOfCulture.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Информация о мероприятии"
+    Width="500"
+    Height="300"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <Style BasedOn="{StaticResource {x:Type Label}}" TargetType="Label">
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <!--  NAME  -->
+        <StackPanel>
+            <Label Content="Название: " />
+            <Label Content="{Binding Name}" />
+        </StackPanel>
+        <!--  LOCATION  -->
+        <StackPanel>
+            <Label Content="Местоположение: " />
+            <Label Content="{Binding Location}" />
+        </StackPanel>
+        <!--  DATE  -->
+        <StackPanel>
+            <Label Content="Дата проведения: " />
+            <Label Content="{Binding Date, StringFormat=dd.MM.yyyy}" />
+        </StackPanel>
+        <!--  Участвующие группы  -->
+        <StackPanel>
+            <Label Content="Участвующие группы: " />
+            <Label Content="{Binding GroupsString}" />
+        </StackPanel>
+    </StackPanel>
+</Window>

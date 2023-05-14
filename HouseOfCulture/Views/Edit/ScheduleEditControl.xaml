@@ -17,11 +17,14 @@
             Margin="0,5"
             wpf:Hint.Placeholder="Группа"
             DisplayMemberPath="Name"
-            SelectedItem="{Binding Group}" />
+            SelectedItem="{Binding Group}"
+            SelectionChanged="CbGroups_OnSelectionChanged" />
         <DatePicker
+            Name="Dp"
             Margin="0,5"
             wpf:Hint.Placeholder="Дата"
-            SelectedDate="{Binding Date}" />
+            SelectedDate="{Binding Date}"
+            SelectedDateChanged="Dp_OnSelectedDateChanged" />
         <ComboBox
             Name="CbRoles"
             Margin="0,5"

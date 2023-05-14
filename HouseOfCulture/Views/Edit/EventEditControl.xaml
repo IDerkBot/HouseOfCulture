@@ -24,6 +24,7 @@
                 wpf:Hint.Placeholder="Наименование"
                 Text="{Binding Name}" />
             <DatePicker
+                Name="Dp"
                 Margin="0,5"
                 wpf:Hint.Placeholder="Дата проведения"
                 SelectedDate="{Binding Date, StringFormat=dd.MM.yyyy}" />

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -79,11 +80,16 @@ namespace HouseOfCulture.Views.Tables
         private void TbSearch_OnTextChanged(object sender, TextChangedEventArgs e)
         {
             var search = TbSearch.Text.ToLower();
-            var list = HouseOfCultureEntities.GetContext().Students.Where(data =>
-                data.Surname.ToLower().Contains(search) ||
-                data.Firstname.ToLower().Contains(search) ||
-                data.Patronymic.ToLower().Contains(search) ||
-                data.DateBirth.ToString().ToLower().Contains(search)).ToList();
+            var list = new List<Student>();
+            foreach (var student in HouseOfCultureEntities.GetContext().Students)
+            {
+                var date = student.DateBirth ?? DateTime.MinValue;
+                if(student.Surname.ToLower().Contains(search) ||
+                   student.Firstname.ToLower().Contains(search) ||
+                   student.Patronymic.ToLower().Contains(search) ||
+                   date.ToString("dd.MM.yyyy").Contains(search))
+                    list.Add(student);
+            }
             DgData.ItemsSource = list;
         }
     }

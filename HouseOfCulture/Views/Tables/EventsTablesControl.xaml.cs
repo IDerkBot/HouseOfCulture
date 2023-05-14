@@ -71,12 +71,23 @@ namespace HouseOfCulture.Views.Tables
         private void TbSearch_OnTextChanged(object sender, TextChangedEventArgs e)
         {
             var search = TbSearch.Text.ToLower();
-            var list = HouseOfCultureEntities.GetContext().Events.Where(@event =>
-                @event.Name.ToLower().Contains(search) ||
-                @event.Location.ToLower().Contains(search) ||
-                @event.Date.ToString().ToLower().Contains(search) ||
-                @event.Groups.Any(t => t.Name.ToLower().Contains(search))).ToList();
+            var list = new List<Event>();
+            // ReSharper disable once LoopCanBeConvertedToQuery
+            foreach (var @event in HouseOfCultureEntities.GetContext().Events)
+            {
+                if(@event.Name.ToLower().Contains(search) ||
+                   @event.Location.ToLower().Contains(search) ||
+                   @event.Date.ToString("dd.MM.yyyy HH:mm").Contains(search)||
+                   @event.Groups.Any(t => t.Name.ToLower().Contains(search)))
+                   list.Add(@event);
+            }
             DgData.ItemsSource = list;
+        }
+
+        private void BtnView_OnClick(object sender, RoutedEventArgs e)
+        {
+            var selectedEvent = ((sender as Button)?.DataContext as Event);
+            new EventInfo(selectedEvent).Show();
         }
     }
 }

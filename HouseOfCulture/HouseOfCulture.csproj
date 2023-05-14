@@ -91,6 +91,9 @@
         <Compile Include="Views\Edit\UserEditControl.xaml.cs">
           <DependentUpon>UserEditControl.xaml</DependentUpon>
         </Compile>
+        <Compile Include="Views\EventInfo.xaml.cs">
+          <DependentUpon>EventInfo.xaml</DependentUpon>
+        </Compile>
         <Compile Include="Views\MenuControl.xaml.cs">
           <DependentUpon>MenuControl.xaml</DependentUpon>
         </Compile>
@@ -145,6 +148,7 @@
         <Page Include="Views\Edit\StudentEditControl.xaml" />
         <Page Include="Views\Edit\TypeRequestEditControl.xaml" />
         <Page Include="Views\Edit\UserEditControl.xaml" />
+        <Page Include="Views\EventInfo.xaml" />
         <Page Include="Views\MenuControl.xaml" />
         <Page Include="Views\ProfileControl.xaml" />
         <Page Include="Views\RegistrationControl.xaml" />
@@ -184,6 +188,7 @@
     <ItemGroup>
       <Content Include="SQL\2012\HouseOfCulture.sql" />
       <Content Include="SQL\v160\HouseOfCulture.sql" />
+      <Content Include="Tasks.md" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
